@@ -1,5 +1,5 @@
 {
-  "name": "room-occupancy-optimization",
+  "name": "room-occupancy-optimiser",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
