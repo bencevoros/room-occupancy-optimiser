@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FinalRoomOccupations calls setRoomOccupations when component renders 1`] = `
+<div
+  data-testid="finalRoomOccupations"
+>
+  <p>
+    <b>
+      Usage Economy:
+    </b>
+     
+    0
+     (EUR 
+    0
+    )
+  </p>
+  <p>
+    <b>
+      Usage Premium:
+    </b>
+     
+    0
+     (EUR 
+    0
+    )
+  </p>
+</div>
+`;

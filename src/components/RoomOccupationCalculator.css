@@ -1,0 +1,11 @@
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info {
+  font-size: 12px;
+  font-style: italic;
+  margin: 0px;
+}
