@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import RoomOccupationCalculator from './components/RoomOccupationCalculator';
+import FinalRoomOccupations from './components/FinalRoomOccupations';
 import './App.css';
 
 function App() {
+  const [roomOccupations, setRoomOccupations] = useState(undefined);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="appContainer">
+      <h1>Room occupancy optimiser</h1>
+      <RoomOccupationCalculator setRoomOccupations={setRoomOccupations} />
+      <div className="separator"/>
+      {roomOccupations ? <FinalRoomOccupations roomOccupations={roomOccupations} /> : <></>}
     </div>
   );
 }
